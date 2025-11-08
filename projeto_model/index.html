@@ -12,9 +12,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light">
+  <div class="text-center mb-4">
+  <img src="https://picsum.photos/1000/200" alt="Banner" class="img-fluid rounded shadow">
+</div>
 
   <div class="container py-5">
-    <h1 class="text-center mb-4">Gerenciador de Registros</h1>
+<h1 class="text-center mb-4 text-primary">Gerenciador de Registros — Atividade Maria Rita</h1>
 
     <div class="d-flex justify-content-center mb-3">
       <button class="btn btn-primary me-2" onclick="mostrarFormulario()">Incluir Registro</button>
@@ -48,6 +51,12 @@
             <label for="campo5" class="form-label">Estado</label>
             <input type="text" class="form-control" id="campo5" required>
           </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="campo6" class="form-label">Profissão</label>
+              <input type="text" class="form-control" id="campo6">
+            </div>
+          </div>
         </div>
         <button type="submit" class="btn btn-primary">Salvar</button>
       </form>
@@ -64,6 +73,7 @@
             <th>Telefone</th>
             <th>Cidade</th>
             <th>Estado</th>
+            <th>Profissão</th>
           </tr>
         </thead>
         <tbody id="tabelaRegistros">
@@ -76,5 +86,8 @@
   <!-- Bootstrap + JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
+  <footer class="text-center mt-5 text-secondary">
+    <small>Desenvolvido por Maria Rita Agenor — Atividade 07/11/2025</small>
+  </footer>
 </body>
 </html>
