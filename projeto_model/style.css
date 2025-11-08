@@ -1,12 +1,100 @@
+/* ======== ESTILO GERAL ======== */
 body {
   background-color: #f8f9fa;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
 }
 
-h1, h4 {
+/* Centraliza e dá destaque aos títulos */
+h1 {
   text-align: center;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 20px;
 }
 
+h4 {
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ======== ESTILO DOS CARDS ======== */
 .card {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* ======== FORMULÁRIO ======== */
+#formulario {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#formulario .form-label {
+  font-weight: 500;
+}
+
+/* ======== LISTA DE REGISTROS ======== */
+#listaRegistros {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Evita corte lateral da tabela */
+}
+
+/* Tabela ocupa toda a largura do card */
+#listaRegistros table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Cabeçalho da tabela */
+#listaRegistros th {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+}
+
+/* Células da tabela */
+#listaRegistros td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Linha ao passar o mouse */
+#listaRegistros tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+/* ======== BOTÕES ======== */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: transform 0.1s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+footer small {
+  font-style: italic;
 }
